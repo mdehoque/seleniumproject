@@ -1,0 +1,41 @@
+package Pages;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.PageFactory;
+
+import BaseDrivers.PageDriver;
+
+
+public class AccountPage {
+	public AccountPage(){
+		PageFactory.initElements(PageDriver.getCurrentDriver(), this);
+		
+	}
+	
+	
+	@FindBy (xpath = "//input[@placeholder='Search Best Buy']")
+	WebElement account;
+	
+	
+	
+	public void account() throws InterruptedException {
+		account.click();
+		Thread.sleep(10000);
+
+}
+
+	public void open() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+	}
+	

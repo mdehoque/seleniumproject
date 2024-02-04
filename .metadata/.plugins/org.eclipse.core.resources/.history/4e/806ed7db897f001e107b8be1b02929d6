@@ -1,0 +1,34 @@
+package tests;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+import basedrivers.pagedriver;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+
+public class NewTest {
+	
+	
+	  @BeforeTest
+			public void start() throws InterruptedException {
+				pagedriver.getCurrentDriver().get(url);
+				Thread.sleep(5000);
+				
+			}
+		  
+		  
+	  
+
+  @Test
+  public void f() {
+  }
+
+  @AfterTest
+  public void afterTest() {
+  }
+
+}

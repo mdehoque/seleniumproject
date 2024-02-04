@@ -1,0 +1,32 @@
+package Tests;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeClass;
+
+import org.testng.annotations.Test;
+
+import BaseDrivers.BaseDriver;
+import BaseDrivers.PageDriver;
+import Pages.Mainpage;
+
+
+public class Mainpage_test extends BaseDriver{
+
+	@BeforeClass
+	public void start() throws InterruptedException {
+		PageDriver.getCurrentDriver().get(url);
+		Thread.sleep(5000);
+	}
+    public void Mainpage_test() throws IOException {
+
+        Mainpage mainpage = new Mainpage();
+        mainpage.FirstBookHover();
+    } 
+
+
+    }
+
+
+	

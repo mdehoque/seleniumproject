@@ -1,0 +1,44 @@
+package Pages;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import BaseDrivers.PageDriver;
+
+public class Mainpage {
+	public Mainpage() {
+		PageFactory.initElements(PageDriver.getCurrentDriver(), this);
+	}
+	
+    @FindBy(xpath = "//button[@product-id=\"42908\"]")
+    public static WebElement FirstBook;
+    
+    @FindBy(xpath = "//div[@title=\"শঙ্কু সমগ্র সত্যজিৎ রায়\"]")
+    public static WebElement FirstBook1;
+    
+    
+    
+    public static void Mytest() throws IOException, InterruptedException {
+    	FirstBook.click();
+    	FirstBook1.click();
+    	Thread.sleep(10000);
+    	
+
+	
+    }
+
+
+
+	}
+
+
+
+
+    
+
+
+
+

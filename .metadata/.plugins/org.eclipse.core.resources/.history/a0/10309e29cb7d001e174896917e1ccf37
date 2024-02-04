@@ -1,0 +1,28 @@
+package tests;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import basedrivers.basedriver;
+import basedrivers.pagedriver;
+import pages.AdminPage;
+import pages.LoginPage;
+
+public class AdminPageTest extends basedriver{
+
+		@BeforeClass
+		public void start() throws InterruptedException {
+			pagedriver.getCurrentDriver().get(url);
+			Thread.sleep(5000);
+			
+		}
+			@Test
+			public void AdminPageTest() throws InterruptedException {
+				AdminPage adminPage = new AdminPage();
+				adminPage.adminclick();
+			
+		}
+			
+		}
+
+
